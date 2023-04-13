@@ -1,80 +1,129 @@
 #header {
-    height:800px;
-    background-color: brown;
-    display:flex;
-    flex-direction: column;
-    margin-bottom: 40px;
+  height: 800px;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 #main {
-    height:800px;
-    display:grid;
-    grid-template-columns: auto auto auto auto;
-    margin-bottom: 40px;
-    text-align: center;
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 40px;
+}
+#main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #footer {
-    height:800px;
-    background-color: rgb(42, 124, 165);
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
+  height: 600px;
+  background-color: rgb(42, 124, 165);
 }
 .flex-hori {
-    display:flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height:200px;
+}
+.flex-bottom {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: midnightblue;
+    background-color: white;
+    height:200px;
+  }
+.flex-bottom h3{
+    color:blueviolet;
+}
+.flex-bottom p{
+    color:rgb(7, 7, 7);
 }
 .grid {
-    display:grid;
-    grid-template-columns: auto auto auto auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
 }
-.wide{
-    grid-column: span 2;
+.grid div {
+    height:400px;
 }
-.narrow{
-
+.wide {
+  grid-column: span 2;
+}
+.wide p, h3{
+  max-width: 400px;
+  text-align: center;
+}
+.narrow p, h3 {
+  max-width: 200px;
+  text-align: center;
 }
 #first {
-    background-color: rgb(146, 146, 151);
+  background-color: rgb(146, 146, 151);
 }
 #second {
-    background-color: rgb(0, 255, 47);
+  background-image: url("images/worst.jpg");
+  background-position: bottom;
 }
 #third {
-    background-color: red;
+  background-color: red;
 }
 #fourth {
-    background-color: yellow;
+  background-color:hsl(60, 59%, 13%);
 }
 #fifth {
-    background-color: yellowgreen;
+  background-image: url("images/giphy.gif");
+  background-position: bottom;
 }
 #sixth {
-    background-color: lightsalmon;
+  background-color: lightsalmon;
+}
+#seventh {
+    background-image: url("images/valentines\ disaster.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#nineth {
+    background-image: url("images/glasses.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1 {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
 }
 h2 {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-weight:900;
-    font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
 }
 * {
-    text-decoration:none;
-    color:white;
+  text-decoration: none;
+  color: white;
 }
 #linkbar > a {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    padding:30px;
-    position: relative;
-    top:30px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  padding: 30px;
+  position: relative;
+  top: 30px;
 }
 #best {
-    padding: 300px 300px;
+  padding: 300px 600px;
+  background-image: url("images/bake.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+button {
+  background-color: rgb(239, 94, 118);
+  border: 3px solid white;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
