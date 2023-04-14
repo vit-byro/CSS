@@ -25,20 +25,20 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height:200px;
+  height: 200px;
 }
 .flex-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: white;
-    height:200px;
-  }
-.flex-bottom h3{
-    color:blueviolet;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  height: 200px;
 }
-.flex-bottom p{
-    color:rgb(7, 7, 7);
+.flex-bottom h3 {
+  color: blueviolet;
+}
+.flex-bottom p {
+  color: rgb(7, 7, 7);
 }
 .grid {
   display: grid;
@@ -46,16 +46,18 @@
   grid-template-rows: auto auto;
 }
 .grid div {
-    height:400px;
+  height: 400px;
 }
 .wide {
   grid-column: span 2;
 }
-.wide p, h3{
+.wide p,
+h3 {
   max-width: 400px;
   text-align: center;
 }
-.narrow p, h3 {
+.narrow p,
+h3 {
   max-width: 200px;
   text-align: center;
 }
@@ -70,7 +72,7 @@
   background-color: red;
 }
 #fourth {
-  background-color:hsl(60, 59%, 13%);
+  background-color: hsl(60, 59%, 13%);
 }
 #fifth {
   background-image: url("images/giphy.gif");
@@ -80,16 +82,16 @@
   background-color: lightsalmon;
 }
 #seventh {
-    background-image: url("images/valentines\ disaster.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("images/valentines\ disaster.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #nineth {
-    background-image: url("images/glasses.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("images/glasses.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
   font-family: "Raleway", sans-serif;
